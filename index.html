@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Secure Online Voting</title>
+<title>Online Voting System</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,47 +18,111 @@
 
 <header>
 
-<h1>Secure Online Voting System</h1>
+<h1>National Online Voting Portal</h1>
 
-<button id="themeToggle">🌙 Toggle Theme</button>
+<div class="header-info">
+
+<span id="clock"></span>
+
+<button id="themeToggle">Toggle Theme</button>
+
+</div>
 
 </header>
 
-<div class="container">
+<section class="banner">
 
-<section class="vote-section">
+<h2>Election 2025</h2>
+<p>Vote responsibly. Your vote decides the future.</p>
+
+</section>
+
+<main class="container">
+
+<section class="voting-panel">
 
 <h2>Cast Your Vote</h2>
 
 <form id="voteForm">
 
+<label>Full Name</label>
 <input type="text" id="voterName" placeholder="Enter your name">
+
+<label>Voter ID</label>
+<input type="text" id="voterID" placeholder="Enter voter ID">
+
+<label>Select Candidate</label>
+
+<input type="text" id="searchCandidate" placeholder="Search candidate">
 
 <div class="candidate-list">
 
-<label class="candidate">
-<img src="https://i.pravatar.cc/80?img=1">
+<div class="candidate-card">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h3>Rahul Verma</h3>
+<p>People's Reform Party</p>
+
+<label>
 <input type="radio" name="candidate" value="Rahul">
-<span>Rahul</span>
+Vote
 </label>
 
-<label class="candidate">
-<img src="https://i.pravatar.cc/80?img=2">
+<a href="#">View Manifesto</a>
+
+</div>
+
+
+<div class="candidate-card">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h3>Priya Sharma</h3>
+<p>National Development Party</p>
+
+<label>
 <input type="radio" name="candidate" value="Priya">
-<span>Priya</span>
+Vote
 </label>
 
-<label class="candidate">
-<img src="https://i.pravatar.cc/80?img=3">
+<a href="#">View Manifesto</a>
+
+</div>
+
+
+<div class="candidate-card">
+
+<img src="https://randomuser.me/api/portraits/men/65.jpg">
+
+<h3>Arjun Singh</h3>
+<p>Progressive Unity Party</p>
+
+<label>
 <input type="radio" name="candidate" value="Arjun">
-<span>Arjun</span>
+Vote
 </label>
 
-<label class="candidate">
-<img src="https://i.pravatar.cc/80?img=4">
+<a href="#">View Manifesto</a>
+
+</div>
+
+
+<div class="candidate-card">
+
+<img src="https://randomuser.me/api/portraits/women/55.jpg">
+
+<h3>Sneha Patel</h3>
+<p>Future Vision Party</p>
+
+<label>
 <input type="radio" name="candidate" value="Sneha">
-<span>Sneha</span>
+Vote
 </label>
+
+<a href="#">View Manifesto</a>
+
+</div>
 
 </div>
 
@@ -70,9 +134,12 @@
 
 </section>
 
-<section class="results-section">
 
-<h2>Live Results</h2>
+<section class="results-panel">
+
+<h2>Live Election Results</h2>
+
+<h3 id="totalVotes"></h3>
 
 <div id="results"></div>
 
@@ -82,9 +149,73 @@
 
 </section>
 
+
+<section class="info-panel">
+
+<h2>Election Information</h2>
+
+<ul>
+
+<li>Voting is open from 9:00 AM to 6:00 PM</li>
+<li>Each voter can vote only once</li>
+<li>Votes are stored securely</li>
+<li>Results update automatically</li>
+
+</ul>
+
+</section>
+
+
+<section class="instructions">
+
+<h2>Voting Instructions</h2>
+
+<ol>
+
+<li>Enter your name and voter ID.</li>
+<li>Select the candidate you want to vote for.</li>
+<li>Click submit vote.</li>
+<li>Your vote will be recorded instantly.</li>
+
+</ol>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer-section">
+
+<h3>Election Commission</h3>
+
+<p>Online Voting System Demo Project</p>
+
 </div>
+
+<div class="footer-section">
+
+<h3>Contact</h3>
+
+<p>Email: election@demo.com</p>
+
+<p>Phone: +91 99999 99999</p>
+
+</div>
+
+<div class="footer-section">
+
+<h3>Important Links</h3>
+
+<a href="#">Privacy Policy</a><br>
+<a href="#">Terms of Service</a>
+
+</div>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
