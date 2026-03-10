@@ -1,0 +1,14 @@
+/* JavaScript Programming Essentials
+Concepts Covered
+
+Expressions
+
+Conditions
+
+Loops
+
+Functions
+
+Arrays
+
+Objects */

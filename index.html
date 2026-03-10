@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secure Online Voting</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Secure Online Voting System</h1>
+
+<button id="themeToggle">🌙 Toggle Theme</button>
+
+</header>
+
+<div class="container">
+
+<section class="vote-section">
+
+<h2>Cast Your Vote</h2>
+
+<form id="voteForm">
+
+<input type="text" id="voterName" placeholder="Enter your name">
+
+<div class="candidate-list">
+
+<label class="candidate">
+<img src="https://i.pravatar.cc/80?img=1">
+<input type="radio" name="candidate" value="Rahul">
+<span>Rahul</span>
+</label>
+
+<label class="candidate">
+<img src="https://i.pravatar.cc/80?img=2">
+<input type="radio" name="candidate" value="Priya">
+<span>Priya</span>
+</label>
+
+<label class="candidate">
+<img src="https://i.pravatar.cc/80?img=3">
+<input type="radio" name="candidate" value="Arjun">
+<span>Arjun</span>
+</label>
+
+<label class="candidate">
+<img src="https://i.pravatar.cc/80?img=4">
+<input type="radio" name="candidate" value="Sneha">
+<span>Sneha</span>
+</label>
+
+</div>
+
+<button type="submit">Submit Vote</button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+
+<section class="results-section">
+
+<h2>Live Results</h2>
+
+<div id="results"></div>
+
+<canvas id="voteChart"></canvas>
+
+<button onclick="resetVotes()">Reset Votes</button>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
